@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.js"></script>
+    <script src="../lib/respond/respond.js"></script>
+    <![endif]-->
+    <style>
+        .wjs_header{
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #ccc;
+        }
+        .wjs_header  .row{
+            height: 100%;
+            text-align: center;
+        }
+        .wjs_header  .row > div:nth-of-type(-n+3){
+            border-right: 1px solid #ccc;
+        }
+        .wjs_header  .row > .col-md-2 > .wjs_code {
+            position: relative;
+            display: block;
+        }
+        .wjs_header  .row > .col-md-2 > .wjs_code > img {
+            display: none;
+            border: 1px solid #ccc;
+            border-top: none;
+            position: absolute;
+            left: 50%;
+            top: 49px;
+            transform: translateX(-50%);
+            z-index: 9;
+        }
+        .wjs_header  .row > .col-md-2 > .wjs_code:hover > img {
+            display: block;
+        }
+        .wjs_header  .row > div:last-of-type > .btn-danger {
+            background-color: #e92322;
+        }
+        .wjs_header  .row > div:last-of-type > .btn {
+            padding: 3px 15px;
+        }
+        .wjs_header  .row > div:last-of-type > .btn-link {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="wjs_header hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="javascript:;" class="wjs_code">
+                    <span class="wjs_icon wjs_icon_phone"></span>
+                    <span>手机微金所</span>
+                    <span class="glyphicon glyphicon-menu-down"></span>
+                    <img src="../images/code.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="col-md-5">
+                <span class="wjs_icon wjs_icon_tel"></span>
+                <a href="javascript:;">4006-89-4006（服务时间：9:00~21:00） 联系在线客服</a>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;">常见问题</a>&nbsp;&nbsp;
+                <a href="javascript:;">财富问题</a>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-danger">免费注册</button>
+                <button type="button" class="btn btn-link">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
